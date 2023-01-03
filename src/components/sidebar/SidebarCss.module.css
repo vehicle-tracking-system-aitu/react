@@ -1,0 +1,49 @@
+.wrapper {
+  height: 100%;
+}
+.container {
+  background-color: #455360;
+  width: 80px;
+  height: 100%;
+  top: 0;
+  left: 0px;
+}
+
+.container__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__img {
+  position: relative;
+}
+
+.logo__icon {
+  position: absolute;
+}
+
+.sidebarContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cntIcon {
+  width: 80px;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.cntIcon:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.selectedIcon {
+  background: rgba(0, 0, 0, 0.34);
+}
+
+.bottomIcon {
+}
