@@ -5,6 +5,8 @@ import mount from "../../ common/sidebarAssets/mount.png";
 import reportIcon from "../../ common/sidebarAssets/reportIcon.svg";
 import mapIcon from "../../ common/sidebarAssets/mapIcon.svg";
 import settingsIcon from "../../ common/sidebarAssets/settingsIcon.svg";
+import search from "../../ common/sidebarAssets/search.svg";
+import slider from "../../ common/sidebarAssets/slider.svg";
 
 const SidebarComponent = () => {
   const [isReport, setIsReport] = useState(false);
@@ -24,7 +26,7 @@ const SidebarComponent = () => {
 
           <div className={style.sidebarContent}>
             <div
-              className={`${style.cntIcon} ${style.selectedIcon}`}
+              className={`${style.cntIcon} ${style.selectedIcon} ${style.reportIcon}`}
               onClick={() => {
                 setIsReport(!isReport);
               }}
@@ -40,7 +42,19 @@ const SidebarComponent = () => {
             </div>
           </div>
         </div>
-        {isReport ? <h1>Hello</h1> : null}
+        {isReport ? <div className={`${style.sidebar__active}`}>
+          <div className={`${style.sidebar__toggle}`}>
+            <div className={`${style.searchbox__wrapper}`}>
+              <div className={`${style.searchIcon}`}>
+                <img src={search} alt="searchIcon" />
+              </div>
+              <input className={`${style.searchbox}`} type="text" id="search" placeholder="Search..." />
+              <div className={`${style.sliderIcon}`}>
+                <img src={slider} alt="sliderIcon" />
+              </div>
+            </div>
+          </div>
+        </div> : null}
       </div>
     </>
   );
