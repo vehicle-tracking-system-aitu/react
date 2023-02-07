@@ -54,6 +54,7 @@ const SidebarComponent = () => {
               </div>
             </div>
             <div className={style.reportCard__wrapper}>
+              <div className={style.report}>Reports</div>
               <div className={style.report__card}>
                 <div className={style.report__content}>
                   <div className={style.id__wrapper}>

@@ -100,6 +100,12 @@ body{
   top: 63px;
   left: 10px;
 }
+.report{
+  color: #777777;
+  font-weight: 700;
+  position: absolute;
+  top: 140px;
+}
 .reportCard__wrapper{
 }
 
