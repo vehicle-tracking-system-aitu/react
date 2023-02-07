@@ -1,3 +1,6 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 .wrapper {
   height: 100%;
 }
@@ -55,6 +58,7 @@
   left: 80px;
   top: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding-left: 25px;
 }
 
 .searchbox__wrapper {
@@ -63,7 +67,7 @@
 }
 
 .searchbox {
-  margin: 50px 25px;
+  margin-top: 50px ;
   width: 350px;
   height: 50px;
   border: 1px #ABAEB1;
@@ -94,5 +98,85 @@
   position: absolute;
   display: inline-block;
   top: 63px;
-  left: 34px;
+  left: 10px;
 }
+.report{
+  color: #777777;
+  font-weight: 700;
+  position: absolute;
+  top: 140px;
+}
+.reportCard__wrapper{
+}
+
+.report__card{
+  width: 350px;
+  height: 230px;
+  margin-top: 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 10px 24px;
+}
+
+.report__content{
+  display: flex;
+  justify-content: space-between;
+
+}
+.id__wrapper{
+  font-size: 14px;
+}
+.car__id{
+  margin-bottom: 3px;
+  color: #9D9D9D;
+}
+.id__number{
+  color: #455360;
+  font-weight: 700;
+}
+.progress__wrapper{
+  margin-top: 10px;
+  width: 90px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #4BA764;
+  padding: 4px 10px;
+}
+.progress{
+  position: absolute;
+  font-size: 12px;
+  color: #fff;
+}
+.speed__wrapper{
+  font-size: 14px;
+}
+.car__speed{
+  margin-bottom: 3px;
+  color: #9D9D9D;
+
+}
+.speed__number{
+  font-weight: 700;
+  color: #455360;
+}
+.line{
+  margin-top: 8px;
+  border: 1px solid #EDEDE9;
+}
+
+.driver__wrapper{
+  margin-top: 8px;
+}
+.name {
+  display: inline-block;
+  font-weight: 700;
+  color: #455360;
+}
+.role{
+  color: #9D9D9D;
+}
+.line2{
+  margin-top: 125px;
+  border: 1px solid #EDEDE9;
+}
+
