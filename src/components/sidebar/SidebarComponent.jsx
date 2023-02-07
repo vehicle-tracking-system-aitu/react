@@ -53,6 +53,29 @@ const SidebarComponent = () => {
                 <img src={slider} alt="sliderIcon" />
               </div>
             </div>
+            <div className={style.reportCard__wrapper}>
+              <div className={style.report__card}>
+                <div className={style.report__content}>
+                  <div className={style.id__wrapper}>
+                    <li className={style.car__id}>Car ID</li>
+                    <li className={style.id__number}>CRN-5922</li>
+                  </div>
+                    <div className={style.speed__wrapper}>
+                      <li className={style.car__speed}>Speed</li>
+                      <li className={style.speed__number}>10kph</li>
+                    </div>
+                  <div className={style.progress__wrapper}>
+                      <div className={style.progress}>In progress</div>
+                  </div>
+                </div>
+                <div className={style.line}></div>
+                <div className={style.line2}></div>
+                <div className={style.driver__wrapper}>
+                    <li className={style.name}>Name Surname</li>
+                  <li className={style.role}>Driver</li>
+                </div>
+              </div>
+            </div>
           </div>
         </div> : null}
       </div>
