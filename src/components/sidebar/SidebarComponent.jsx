@@ -7,6 +7,9 @@ import mapIcon from "../../ common/sidebarAssets/mapIcon.svg";
 import settingsIcon from "../../ common/sidebarAssets/settingsIcon.svg";
 import search from "../../ common/sidebarAssets/search.svg";
 import slider from "../../ common/sidebarAssets/slider.svg";
+import {Link, NavLink, Route} from "react-router-dom";
+import logout from "../../ common/sidebarAssets/log-out.svg"
+import LoginComponent from "../login/LoginComponent";
 
 const SidebarComponent = () => {
   const [isReport, setIsReport] = useState(false);
@@ -39,6 +42,9 @@ const SidebarComponent = () => {
 
             <div className={`${style.cntIcon} ${style.bottomIcon}`}>
               <img src={settingsIcon} alt="settings" />
+            </div>
+            <div className={`${style.cntIcon} ${style.logoutIcon}`}>
+            <NavLink to={'/login'} className="nav-link"> <img src={logout}/></NavLink>
             </div>
           </div>
         </div>

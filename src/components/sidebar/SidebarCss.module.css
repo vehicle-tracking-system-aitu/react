@@ -179,4 +179,16 @@ body{
   margin-top: 125px;
   border: 1px solid #EDEDE9;
 }
+.logoutIcon{
+  display: flex;
+  justify-content: center;
+  transition: 0.2s;
+  align-items: center;
+  margin-top: 171px;
+}
+.logoutIcon:hover {
+
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.14);
+}
 
